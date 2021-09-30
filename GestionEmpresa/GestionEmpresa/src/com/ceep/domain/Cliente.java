@@ -2,26 +2,16 @@ package com.ceep.domain;
 
 import java.util.Date;
 
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author LORENA
- */
 public class Cliente extends Persona {
-   private int idCliente;
-   private boolean vip;
+
+    private int idCliente;
+    private boolean vip;
     private Date fecha;
     private int contcliente;
 
-    public Cliente( boolean vip, Date fecha, String nombre, char genero, int edad, String direccion) {
+    public Cliente(boolean vip, Date fecha, String nombre, char genero, int edad, String direccion) {
         super(nombre, genero, edad, direccion);
-        this.idCliente = idCliente+contcliente;
+        this.idCliente = idCliente + contcliente;
         this.vip = vip;
         this.fecha = fecha;
     }
@@ -95,6 +85,4 @@ public class Cliente extends Persona {
         return "Cliente{" + "idCliente=" + idCliente + ", vip=" + vip + ", fecha=" + fecha + ", contcliente=" + contcliente + '}';
     }
 
-  
-    
 }

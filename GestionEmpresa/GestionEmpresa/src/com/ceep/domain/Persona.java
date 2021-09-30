@@ -7,6 +7,13 @@ public class Persona {
     protected int edad;
     protected String direccion;
 
+    public Persona() {
+    }
+    
+    public Persona(String nombre) {
+        this.nombre= nombre;
+    }
+
     public Persona(String nombre, char genero, int edad, String direccion) {
         this.nombre = nombre;
         this.genero = genero;

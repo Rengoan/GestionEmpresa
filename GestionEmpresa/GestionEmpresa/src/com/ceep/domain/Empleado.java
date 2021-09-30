@@ -4,7 +4,21 @@ public class Empleado extends Persona {
 
     int idEmpleado;
     double sueldo;
+    private static int contadorEmpleado;
 
+    /**
+     *
+     */
+    public Empleado() {
+//        super();
+        this.idEmpleado = ++Empleado.contadorEmpleado;
+    }
+
+    public Empleado(double sueldo, String nombre) {
+        this();
+        this.sueldo = sueldo;
+        this.nombre = nombre;
+    }
     public Empleado(double sueldo, String nombre, char genero, int edad, String direccion) {
         super(nombre, genero, edad, direccion);
         this.idEmpleado = +idEmpleado;
@@ -21,6 +35,14 @@ public class Empleado extends Persona {
 
     public double getSueldo() {
         return sueldo;
+    }
+
+    public static int getContadorEmpleado() {
+        return contadorEmpleado;
+    }
+
+    public static void setContadorEmpleado(int contadorEmpleado) {
+        Empleado.contadorEmpleado = contadorEmpleado;
     }
 
     public void setSueldo(double sueldo) {
