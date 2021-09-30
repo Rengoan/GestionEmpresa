@@ -1,16 +1,7 @@
 package com.ceep.domain;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+public class Empleado extends Persona {
 
-/**
- *
- * @author LORENA
- */
-public class Empleado extends Persona{
     int idEmpleado;
     double sueldo;
 
@@ -19,7 +10,6 @@ public class Empleado extends Persona{
         this.idEmpleado = +idEmpleado;
         this.sueldo = sueldo;
     }
-
 
     public int getIdEmpleado() {
         return idEmpleado;
@@ -39,8 +29,7 @@ public class Empleado extends Persona{
 
     @Override
     public String toString() {
-        return "Empleado{" + "idEmpleado=" + idEmpleado + ", sueldo=" + sueldo + '}';
+        return "idEmpleado= " + idEmpleado + ",\nsueldo= " + sueldo + super.toString();
     }
-    
-    
+
 }
